@@ -23,6 +23,7 @@ gclient sync
 echo "{ 'GYP_DEFINES': 'OS=android target_arch=arm', }" > chromium.gyp_env
 
 export GYP_GENERATORS='ninja'
+cd ~/chromium/src
 python xwalk/gyp_xwalk
 
 ninja -C out/Release xwalk_core_library_aar xwalk_shared_library_aar
