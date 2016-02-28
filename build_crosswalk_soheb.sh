@@ -19,4 +19,4 @@ export GYP_GENERATORS='ninja'
 cd ~/crosswalk/src
 python xwalk/gyp_xwalk
 
-ninja -C out/Release xwalk_core_library_aar xwalk_shared_library_aar
+ninja -C out/Release xwalk_core_library_aar
