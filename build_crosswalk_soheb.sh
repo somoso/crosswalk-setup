@@ -9,7 +9,7 @@ cd ~/crosswalk
 
 gclient config --name=src/xwalk https://github.com/somoso/crosswalk.git@origin/crosswalk-16
 
-gclient sync
+gclient sync > gclient.log # diagnostics, yo
 
 .src/build/install-build-deps-android.sh
 
