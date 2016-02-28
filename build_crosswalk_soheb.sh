@@ -2,7 +2,7 @@
 
 set -e
 
-export XWALK_OS_ANDROID=1
+source source_me.sh
 
 mkdir ~/crosswalk
 cd ~/crosswalk
@@ -11,7 +11,7 @@ gclient config --name=src/xwalk https://github.com/somoso/crosswalk.git@origin/c
 
 gclient sync
 
-./build/install-build-deps-android.sh
+.src/build/install-build-deps-android.sh
 
 echo "{ 'GYP_DEFINES': 'OS=android target_arch=arm', }" > chromium.gyp_env
 
